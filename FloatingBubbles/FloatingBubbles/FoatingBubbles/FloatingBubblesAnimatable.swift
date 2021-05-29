@@ -2,7 +2,7 @@
 //  FloatingBubblesAnimatable.swift
 //  FloatingBubbles
 //
-//  Created by Rahul Patra on 29/05/21.
+//  Created by Chandan Sharda on 29/05/21.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import UIKit
 
 public class BouncyFloatingViews: UIView {
     
-    weak var delegate: BouncyFloatingPresenable!
+    public weak var delegate: BouncyFloatingPresenable!
     private var xvel = [CGFloat]()
     private var yvel = [CGFloat]()
     private var timer: Timer?
@@ -19,7 +19,7 @@ public class BouncyFloatingViews: UIView {
         timer = nil
     }
     
-    func startAnimation() {
+    public func startAnimation() {
         print("")
         timer = Timer(fire: .init(), interval: 1 / delegate.fps, repeats: true, block: { [weak self] _ in
             

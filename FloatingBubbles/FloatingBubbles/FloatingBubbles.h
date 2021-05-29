@@ -2,7 +2,7 @@
 //  FloatingBubbles.h
 //  FloatingBubbles
 //
-//  Created by Rahul Patra on 29/05/21.
+//  Created by Chandan Sharda on 29/05/21.
 //
 
 #import <Foundation/Foundation.h>
