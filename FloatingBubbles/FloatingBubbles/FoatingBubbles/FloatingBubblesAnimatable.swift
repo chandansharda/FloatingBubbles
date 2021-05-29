@@ -20,6 +20,7 @@ public class BouncyFloatingViews: UIView {
     }
     
     func startAnimation() {
+        print("")
         timer = Timer(fire: .init(), interval: 1 / delegate.fps, repeats: true, block: { [weak self] _ in
             
             guard let self = self else { return }

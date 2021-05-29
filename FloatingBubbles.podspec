@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FloatingBubbles"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "FloatingBubbles"
   spec.description  = "A view that hold floating bubbles with zero gravity."
   spec.homepage     = "https://github.com/chandansharda/FloatingBubbles"
