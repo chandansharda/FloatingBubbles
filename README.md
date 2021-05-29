@@ -147,4 +147,4 @@ https://github.com/chandansharda/
 
 ## License
 
-Magnetic is available under the MIT license. See the LICENSE file for more info.
+FlotaingBubbles is available under the MIT license. See the LICENSE file for more info.
