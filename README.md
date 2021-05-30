@@ -8,7 +8,7 @@
 
 
 
-![Demo VIDEO](https://gifs.com/gif/bubbles-x6kKn9)
+![Demo GIF](https://j.gifs.com/x6kKn9.gif)
 
 
 ```
