@@ -36,7 +36,6 @@ class FloatingBubblesService {
             views.append(ball)
             
             let theta = CGFloat.random(in: -.pi ..< .pi)
-            let speed: CGFloat = 20     // Pixels per second
             xValues.append(cos(theta) * speed)
             yValues.append(sin(theta) * speed)
         }
