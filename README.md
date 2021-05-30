@@ -3,6 +3,10 @@
 **FloatingBubbles** is a customizable views that float with zero gravity animation.
 
 ![Demo VIDEO](https://vimeo.com/556631322)
+[![License](https://img.shields.io/github/license/chandansharda/FloatingBubbles)
+[![Stars](https://img.shields.io/github/stars/chandansharda/FloatingBubbles)
+[![Issues](https://img.shields.io/github/issues/chandansharda/FloatingBubbles)
+
 
 ```
 $ pod try FloatingBubbles
