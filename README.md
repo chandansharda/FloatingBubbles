@@ -157,6 +157,10 @@ use_frameworks!
 pod "FloatingBubbles"
 ```
 
+## Manually
+- Drop **FloatingBubbles Files** into your project.
+
+
 ## Communication
 
 - If you **found a bug**, open an issue.
