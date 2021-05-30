@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D426D3E526633D51009C4D85 /* FloatinbBubblesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426D3E426633D51009C4D85 /* FloatinbBubblesService.swift */; };
 		D4A9A1472662893F00E27DA0 /* FloatingBubbles.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A9A1452662893F00E27DA0 /* FloatingBubbles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4A9A14F2662896800E27DA0 /* FloatingBubblesPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9A14E2662896800E27DA0 /* FloatingBubblesPresentable.swift */; };
 		D4A9A1512662897700E27DA0 /* FloatingBubblesAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A9A1502662897700E27DA0 /* FloatingBubblesAnimatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D426D3E426633D51009C4D85 /* FloatinbBubblesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatinbBubblesService.swift; sourceTree = "<group>"; };
 		D4A9A1422662893F00E27DA0 /* FloatingBubbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatingBubbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A9A1452662893F00E27DA0 /* FloatingBubbles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingBubbles.h; sourceTree = "<group>"; };
 		D4A9A1462662893F00E27DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				D4A9A14E2662896800E27DA0 /* FloatingBubblesPresentable.swift */,
 				D4A9A1502662897700E27DA0 /* FloatingBubblesAnimatable.swift */,
+				D426D3E426633D51009C4D85 /* FloatinbBubblesService.swift */,
 			);
 			path = FoatingBubbles;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D426D3E526633D51009C4D85 /* FloatinbBubblesService.swift in Sources */,
 				D4A9A14F2662896800E27DA0 /* FloatingBubblesPresentable.swift in Sources */,
 				D4A9A1512662897700E27DA0 /* FloatingBubblesAnimatable.swift in Sources */,
 			);
