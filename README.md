@@ -54,6 +54,9 @@ class ViewController: UIViewController {
         ])
         
         floatingView.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         floatingView.startAnimation()
     }
 }
@@ -75,6 +78,10 @@ extension ViewController: BouncyFloatingPresenable {
         60
     }
     
+    var speed: CGFloat {
+        12
+    }
+    
     var heightWidth: CGFloat {
         50
     }
@@ -90,6 +97,8 @@ floatingView.delegate: BouncyFloatingPresenable? // floating views delegate
 var floatingViews: Int // returns number of views
 var heightWidth: CGFloat // returns height and width of the view for making a square
 var fps: CGFloat // returns frame per seconds
+var speed: CGFloat // returns the speed of moving in pixels per inch
+
 ```
 
 ### Delegation
@@ -107,6 +116,11 @@ func viewForBubbleAt(withIndex index: Int) -> UIView? {
 var floatingViews: Int {
     6
 }
+
+var speed: CGFloat {
+    12
+}
+
 
 var fps: Double {
     60
@@ -148,9 +162,9 @@ pod "FloatingBubbles"
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 
-## Credits
+## Author
 
-https://github.com/chandansharda/
+Chandan Sharda
 
 ## License
 
