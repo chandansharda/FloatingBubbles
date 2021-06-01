@@ -19,8 +19,9 @@ $ pod try FloatingBubbles
 
 ## Features
 
-- [x] Create Multiple Nodes
+- [x] Create Multiple Views
 - [x] Customization
+- [x] Different size for every view.
 - [x] ------- More Features Coming Soon -------------
 
 ## Requirements
@@ -100,7 +101,7 @@ var floatingViews: Int // returns number of views
 var heightWidth: CGFloat // returns height and width of the view for making a square
 var fps: CGFloat // returns frame per seconds
 var speed: CGFloat // returns the speed of moving in pixels per inch
-
+func heightForViewAt(atIndex index: Int) -> CGSize? //Return size for every view if its nil then default (heightWidth)size is used
 ```
 
 ### Delegation
@@ -131,6 +132,10 @@ var fps: Double {
 var heightWidth: CGFloat {
     50
 }
+
+func heightForViewAt(atIndex index: Int) -> CGSize? {
+    return CGSize(width: 80, height: 80)
+}
 ```
 
 ### Customization
@@ -146,6 +151,10 @@ func viewForBubbleAt(withIndex index: Int) -> UIView? {
     let v = UIView()
     v.backgroundColor = .red
     return v
+}
+
+func heightForViewAt(atIndex index: Int) -> CGSize? {
+    return CGSize(width: 80, height: 80)
 }
 
 ```
