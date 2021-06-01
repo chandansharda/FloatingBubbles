@@ -177,7 +177,7 @@ pod "FloatingBubbles"
 
 ## Author
 
-Chandan Sharda
+Chandan Sharda, chandan.sharda98@gmail.com
 
 ## License
 
