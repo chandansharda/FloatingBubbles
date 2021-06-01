@@ -8,9 +8,7 @@
 ![Issues](https://img.shields.io/github/issues/chandansharda/FloatingBubbles)
 
 
-
-
-![Demo GIF](https://j.gifs.com/x6kKn9.gif)
+![Demo GIF](https://raw.githubusercontent.com/chandansharda/FloatingBubbles/main/FloatingBubbles/GIF/demo.gif)
 
 
 ```
