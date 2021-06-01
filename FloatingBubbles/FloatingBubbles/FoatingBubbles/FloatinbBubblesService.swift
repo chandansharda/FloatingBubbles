@@ -15,20 +15,23 @@ class FloatingBubblesService {
     var yValues = [CGFloat]()
     var views = [UIView]()
     
-    func makeBubblesOn(view: UIView, withCount count: Int, size: CGFloat, speed: CGFloat) {
+    func makeBubblesOn(view: UIView, delegate: FloatingBubblesPresenable) {
         
         xValues = []
         yValues = []
         views = []
         
-        for _ in 0 ..< count {
-            let ball = UIView(frame: CGRect(x: 0, y: 0, width: size, height: size))
-            ball.layer.cornerRadius = size / 2
+        for i in 0 ..< delegate.floatingViews {
+            let width = delegate.heightForViewAt(atIndex: i)?.width ?? delegate.heightWidth
+            let height = delegate.heightForViewAt(atIndex: i)?.height ?? delegate.heightWidth
+            
+            let ball = UIView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+            ball.layer.cornerRadius = height / 2
             ball.backgroundColor = .green
             ball.clipsToBounds = true
             while true {
-                ball.frame.origin = CGPoint(x: .random(in: 0 ... view.frame.width - size),
-                                            y: .random(in: 0 ... view.frame.height - size))
+                ball.frame.origin = CGPoint(x: .random(in: 0 ... view.frame.width - width),
+                                            y: .random(in: 0 ... view.frame.height - height))
                 if views.allSatisfy({ !doesCollide($0, ball) }) { break }
             }
             
@@ -36,6 +39,7 @@ class FloatingBubblesService {
             views.append(ball)
             
             let theta = CGFloat.random(in: -.pi ..< .pi)
+            let speed: CGFloat = delegate.speed
             xValues.append(cos(theta) * speed)
             yValues.append(sin(theta) * speed)
         }
@@ -45,7 +49,9 @@ class FloatingBubblesService {
     func doesCollide(_ a: UIView, _ b: UIView) -> Bool {
         let radius = a.frame.width / 2
         let distance = sqrt(pow(a.center.x - b.center.x, 2) + pow(a.center.y - b.center.y, 2))
-        return distance <= 2 * radius
+        
+        let radius2 = b.frame.width / 2
+        return distance <= radius + radius2
     }
     
     func move(ball i: Int, withFps fps: CGFloat) {
@@ -74,7 +80,7 @@ class FloatingBubblesService {
         
         for i in 0 ..< self.views.count {
             for j in 0 ..< self.views.count {
-               if i != j && self.doesCollide(views[i], views[j]) {
+                if i != j && self.doesCollide(views[i], views[j]) {
                     
                     let nx = self.views[j].center.x - views[i].center.x
                     let ny = self.views[j].center.y - views[i].center.y
@@ -82,8 +88,8 @@ class FloatingBubblesService {
                     self.reflect(ball: i, nx: nx, ny: ny)
                     self.reflect(ball: j, nx: -nx, ny: -ny)
                     
-                self.move(ball: i, withFps: fps)
-                self.move(ball: j, withFps: fps)
+                    self.move(ball: i, withFps: fps)
+                    self.move(ball: j, withFps: fps)
                 }
             }
         }

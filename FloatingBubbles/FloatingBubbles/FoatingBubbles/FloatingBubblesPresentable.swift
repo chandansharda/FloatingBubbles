@@ -10,12 +10,18 @@
 import Foundation
 import UIKit
 
+public enum FloatingBubblesAnimationType {
+    case bubbleRubber
+}
+
 public protocol FloatingBubblesPresenable: NSObject {
     var floatingViews: Int { get}
     var fps: Double { get }
     var speed: CGFloat { get }
     var heightWidth: CGFloat { get }
     func viewForBubbleAt(withIndex index: Int) -> UIView?
+    func heightForViewAt(atIndex index: Int) -> CGSize?
+    var animationType: FloatingBubblesAnimationType? { get }
 }
 
 extension FloatingBubblesPresenable {
@@ -23,6 +29,12 @@ extension FloatingBubblesPresenable {
     var floatingViews: Int {
         get {
             return 0
+        }
+    }
+    
+    var animationType: FloatingBubblesAnimationType? {
+        get {
+            return nil
         }
     }
     

@@ -49,7 +49,7 @@ public class FloatingBubbleView: UIView {
         timer?.invalidate()
         timer = nil
         
-        service?.makeBubblesOn(view: self, withCount: delegate.floatingViews, size: delegate.heightWidth, speed: delegate.speed)
+        service?.makeBubblesOn(view: self, delegate: delegate)
         reloadData()
     }
     
