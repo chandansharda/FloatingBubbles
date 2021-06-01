@@ -1,6 +1,6 @@
 # Floating Bubbles
 
-**FloatingBubbles** is a customizable views that float with zero gravity animation.
+**FloatingBubbles** is a customizable views that float like zero gravity animation.
 
 ![License](https://img.shields.io/github/license/chandansharda/FloatingBubbles)
 ![Platform](https://img.shields.io/cocoapods/p/FloatingBubbles)
