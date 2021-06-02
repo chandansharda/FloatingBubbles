@@ -8,7 +8,10 @@
 ![Issues](https://img.shields.io/github/issues/chandansharda/FloatingBubbles)
 
 
-![Demo GIF](https://raw.githubusercontent.com/chandansharda/FloatingBubbles/main/FloatingBubbles/GIF/demo.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/chandansharda/FloatingBubbles/main/FloatingBubbles/GIF/demo.gif" alt="FlowingMenu" width="300"/>
+</p>
+![Demo GIF]()
 
 
 ```
