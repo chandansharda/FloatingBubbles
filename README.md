@@ -30,8 +30,7 @@ $ pod try FloatingBubbles
 - Xcode 11.0+
 - Swift 5 (FloatingBubbles)
 
-## Formulas
-
+## Logic
 Circle, find intersection point of two moving circles :-
 ```
 Distance between centres C1 and C2 is calculated as
