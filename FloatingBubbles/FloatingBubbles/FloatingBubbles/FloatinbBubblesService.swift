@@ -54,7 +54,8 @@ class FloatingBubblesService {
     }
     
     func move(ball i: Int, withFps fps: CGFloat) {
-        views[i].frame = views[i].frame.offsetBy(dx: self.xValues[i] / fps, dy: self.yValues[i] / fps)
+        views[i].frame = views[i].frame.offsetBy(dx: self.xValues[i] / fps,
+                                                 dy: self.yValues[i] / fps)
     }
     
     func reflect(ball: Int, nx: CGFloat, ny: CGFloat) {
