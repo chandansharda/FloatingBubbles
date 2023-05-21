@@ -6,7 +6,6 @@
 //  Copyright © 2021 Chandan Sharda. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public class FloatingBubbleView: UIView {
@@ -15,10 +14,7 @@ public class FloatingBubbleView: UIView {
     private var service: FloatingBubblesService? = FloatingBubblesService()
     private var timer: Timer?
     
-    deinit {
-        timer = nil
-        print("timer nil")
-    }
+    deinit { timer = nil }
     
     public func startAnimation() {
         setViews()

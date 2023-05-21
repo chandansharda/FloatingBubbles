@@ -6,7 +6,6 @@
 //  Copyright © 2021 Chandan Sharda. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class FloatingBubblesService {
@@ -93,6 +92,7 @@ class FloatingBubblesService {
                 }
             }
         }
+
         // Check for boundary collision
         for (i, ball) in self.views.enumerated() {
             if ball.frame.minX < 0 { self.views[i].frame.origin.x = 0; self.xValues[i] *= -1 }
