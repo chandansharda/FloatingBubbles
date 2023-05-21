@@ -52,21 +52,21 @@
 		D4A9A1442662893F00E27DA0 /* FloatingBubbles */ = {
 			isa = PBXGroup;
 			children = (
-				D4A9A14D2662895600E27DA0 /* FoatingBubbles */,
+				D4A9A14D2662895600E27DA0 /* FloatingBubbles */,
 				D4A9A1452662893F00E27DA0 /* FloatingBubbles.h */,
 				D4A9A1462662893F00E27DA0 /* Info.plist */,
 			);
 			path = FloatingBubbles;
 			sourceTree = "<group>";
 		};
-		D4A9A14D2662895600E27DA0 /* FoatingBubbles */ = {
+		D4A9A14D2662895600E27DA0 /* FloatingBubbles */ = {
 			isa = PBXGroup;
 			children = (
 				D4A9A14E2662896800E27DA0 /* FloatingBubblesPresentable.swift */,
 				D4A9A1502662897700E27DA0 /* FloatingBubblesAnimatable.swift */,
 				D426D3E426633D51009C4D85 /* FloatinbBubblesService.swift */,
 			);
-			path = FoatingBubbles;
+			path = FloatingBubbles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
