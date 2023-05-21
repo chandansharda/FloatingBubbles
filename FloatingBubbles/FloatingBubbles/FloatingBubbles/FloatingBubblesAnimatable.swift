@@ -22,7 +22,9 @@ public class FloatingBubbleView: UIView {
             guard let self = self else { return }
             self.service?.performTimer(withFps: CGFloat(self.delegate.fps), onView: self)
         })
-        RunLoop.current.add(self.timer!, forMode: .common)
+        if let timer = self.timer {
+            RunLoop.current.add(timer, forMode: .common)
+        }
     }
     
     func reloadData() {
