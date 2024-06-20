@@ -197,4 +197,3 @@ Chandan Sharda, chandan.sharda98@gmail.com
 
 ## License
 
-FlotaingBubbles is available under the MIT license. See the LICENSE file for more info.
